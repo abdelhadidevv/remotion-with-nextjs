@@ -1,19 +1,27 @@
 {
-  "name": "remotion-example",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@next/font": "13.1.0",
-    "eslint": "8.30.0",
-    "eslint-config-next": "13.1.0",
-    "next": "13.1.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  }
+	"name": "remotion-example",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"preview": "npx remotion preview remotion/index.js",
+		"render": "npx remotion render remotion/index.js main out/unwrapped.mp4"
+	},
+	"dependencies": {
+		"@next/font": "13.1.0",
+		"@remotion/cli": "^3.3.16",
+		"eslint-config-next": "13.1.0",
+		"next": "13.1.0",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"remotion": "^3.3.16"
+	},
+	"devDependencies": {
+		"@remotion/eslint-config": "^3.3.16",
+		"eslint": "^8.30.0",
+		"prettier": "^2.8.1"
+	}
 }
